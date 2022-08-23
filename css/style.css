@@ -1,20 +1,103 @@
-body, html{
-    margin:0;
-    padding:0;
+body,
+html {
+    margin: 0;
+    padding: 0;
 }
 
-#header-img{
-    width:250px;
+body {
+    position: relative;
 }
 
-header{
-    display:flex;
-    justify-content:space-between;
-    padding: 20px;
+#header-img {
+    width: 250px;
 }
 
-a{
-    color:black;
-    text-decoration:none;
-    padding:0 5px;
+form {
+    margin-top: 100px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+input[type='email'] {
+    height: 30px;
+    width: 250px;
+}
+
+button[type='submit'] {
+    width: 100px;
+    height: 30px;
+    border: none;
+    margin-top: 10px;
+}
+
+header {
+    top: 0;
+    display: flex;
+    justify-content: space-between;
+    padding: 20px 0;
+    position: fixed;
+    width: 100%;
+    background-color: white;
+}
+
+a {
+    color: black;
+    text-decoration: none;
+    padding: 0 5px;
+}
+
+#features {
+    padding: 0 50px;
+}
+
+.features-heading h1 {
+    font-size: larger;
+    margin: 15px 0 -15px 0;
+}
+
+#how-it-works {
+    display: flex;
+    justify-content: center;
+    margin: 100px;
+}
+
+#pricing {
+    display: flex;
+    width: 100%;
+    justify-content: space-around;
+    margin-bottom: 50px;
+    text-align: center;
+}
+
+.tenor {
+    border: 1px solid black;
+    width: calc(85% / 3);
+    margin: 20px 0;
+}
+
+.tenor-heading {
+    background-color: lightgray;
+    margin: 0;
+    padding: 10px;
+}
+
+.tenor button {
+    margin-bottom: 10px;
+    background-color: yellow;
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+}
+
+@media (max-width: 768px) {
+    #pricing {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .tenor {
+        width: 80%;
+    }
 }
